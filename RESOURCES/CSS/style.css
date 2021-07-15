@@ -12,8 +12,8 @@ body {
 }
 
 ::selection {
-    background-color: rgb(153, 153, 153);
-    color: #fff;
+    background-color: #fae4cf;
+    color: #000;
 }
 
 header,
@@ -397,6 +397,10 @@ h3 {
     background-color: #fff;
     color: #000;
     border: 2px solid #000;
+}
+
+.thesis_exhibit-aside .one {
+    background-color: #fef1e5;
 }
 
 .thesis_exhibit-aside .line {
