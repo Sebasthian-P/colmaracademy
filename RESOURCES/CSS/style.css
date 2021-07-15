@@ -44,7 +44,7 @@ p {
 header {
     display: flex;
     height: 4rem;
-    min-width: 425px;
+    min-width: 455px;
     background-color: rgba(255, 255, 255);
     padding: .5rem 1.5rem;
     box-sizing: border-box;
@@ -377,7 +377,8 @@ h3 {
     margin: 0;
     object-fit: cover;
     object-position: center;
-    border: 2px solid #000;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
 }
 
 .thesis_exhibit-main .description {
