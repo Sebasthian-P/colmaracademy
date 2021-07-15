@@ -1,0 +1,434 @@
+html {
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    max-width: 1799px;
+    min-width: 425px;
+}
+
+::selection {
+    background-color: rgb(153, 153, 153);
+    color: #fff;
+}
+
+header,
+img,
+footer,
+video {
+    user-select: none;
+}
+
+.mobile {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    text-align: justify;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    height: 4rem;
+    min-width: 425px;
+    background-color: rgba(255, 255, 255, 0.959);
+    padding: .5rem 1.5rem;
+    box-sizing: border-box;
+    align-items: center;
+    font-family: "Noto Sans JP", sans-serif;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    max-width: 1799px;
+    border-bottom: 2px solid #000;
+}
+
+.logo-container {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logo-container #logo{
+    height: 3rem;
+}
+
+.logo-container h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 300;
+}
+
+nav.desktop ul{
+    display: flex;
+}
+
+nav.desktop ul li {
+    margin-left: 1.5rem;
+}
+
+nav.desktop ul li a {
+    color: #154360;
+    transition: color .3s linear;
+}
+
+nav.desktop ul li a:hover {
+    color: #f00;
+}
+
+
+/* MAIN */
+
+
+
+
+
+/* COVER PAGE */
+
+
+#cover_page-section {
+    display: flex;
+    padding: 1rem;
+    background-color: #d5dbdb;
+    position: relative;
+    top: 3.8rem;
+    margin-bottom: 3.8rem;
+}
+
+#cover_page-section .banner-container {
+    display: flex;
+    margin: 1rem;
+}
+
+#cover_page-section .banner-container .banner {
+    width: 100%;
+    object-fit: cover;
+}
+
+#cover_page-section .log-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 1rem;
+    background-color: #ffffff93;
+    padding: 1rem;
+}
+
+.register-button {
+    padding: 1rem 3rem;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
+    transition: background-color 1s, color .5s, padding .3s;
+}
+
+.register-button:hover {
+    background-color: rgba(0, 0, 0, 0.514);
+    color: #fff;
+    padding: 1.2rem 3.2rem;
+}
+
+
+/* INFORMATION SECTION */
+
+
+#information-section {
+    display: flex;
+    padding: 2rem 0 2rem 2rem;
+    background-color: #fff;
+}
+
+
+/* INFORMATION MAIN */
+
+
+.information-main {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    flex-shrink: 2;
+}
+
+.information-main .description {
+    background-color: #d5dbdb;
+    padding: 1rem;
+    flex-grow: 5;
+    margin-top: 1rem;
+}
+
+.information-main .author-container {
+    background-color: #283747;
+    color: #fff;
+    padding: .5rem;
+    flex-grow: 1;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.information-main .image-container {
+    display: flex;
+    margin: 0;
+}
+
+.information-main .image-container .image {
+    width: 100%;
+}
+
+
+/* INFORMATION ASIDE  */
+
+
+#information-aside {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+#information-aside .data .description {
+    margin: 1rem;
+}
+
+#information-aside .data .description h2 {
+    margin: 0;
+}
+
+#information-aside .data .description a {
+    color: #3498DB;
+    text-decoration: underline;
+}
+
+#information-aside .data .description a:hover {
+    color: #187ec2;
+}
+
+#information-aside .description p {
+    font-size: .8rem;
+}
+
+#information-aside .data {
+    display: flex;
+    background-color: #E5E7E9;
+    height: 10rem;
+    color: #000;
+}
+
+#information-aside .image-container {
+    border-right: 2px solid #000;
+    margin: 0;
+}
+
+#information-aside .image-container .image {
+    height: 100%;
+}
+
+#information-aside .line {
+    border: 1px solid #1A5276;
+    padding: 0;
+    margin: 1.5rem auto;
+    width: 50%;
+}
+
+
+/* START LEARNING  */
+
+
+#start_learning-section {
+    padding: 3rem;
+    color: #2C3E50;
+    background-color: #ECF0F1;
+}
+
+#start_learning-section h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#start_learning-section p,
+h3 {
+    font-family: "Roboto", sans-serif;
+    opacity: .7;
+}
+
+#start_learning-section h3 {
+    text-transform: uppercase;
+}
+
+#start_learning-section .courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#start_learning-section .courses .course {
+    width: 19rem;
+    flex-grow: 1;
+    max-width: 25rem;
+    background-color: #fff;
+    margin: 1rem;
+    transition: box-shadow .5s;
+}
+
+#start_learning-section .courses .course:hover {
+    box-shadow: 15px 15px 5px 4px rgb(52, 73, 94, .2) ;
+}
+
+#start_learning-section .courses .course .center .image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+#start_learning-section .courses .course .center .image-container img {
+    width: 100%;
+}
+
+#start_learning-section .desktop .course .center .description {
+    margin: 1rem;
+}
+
+#start_learning-section .desktop .course .center .description h2 {
+    margin: 0;
+}
+
+#start_learning-section .desktop .course .center .description p {
+    text-align: left;
+    margin: 0;
+}
+
+
+/* THESIS EXHIBIT  */
+
+
+#thesis_exhibit-section {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+#thesis_exhibit-section h1 {
+    text-align: center;
+    margin: 1rem 0 1rem;
+}
+
+#thesis_exhibit-section .line {
+    border: 1px solid #000;
+    padding: 0;
+    margin: 1rem auto;
+    width: 25%;
+}
+
+#thesis_exhibit-section .thesis_exhibit-section-container {
+    display: flex;
+}
+
+
+.thesis_exhibit-section-container {
+    margin-top: 2rem;
+}
+
+
+/* THESIS EXHIBIT MAIN */
+
+
+.thesis_exhibit-main {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-right: 2rem;
+}
+
+.thesis_exhibit-main .video-container {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+}
+
+.thesis_exhibit-main .video-container .video_thesis {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.thesis_exhibit-main .description {
+    padding: 1rem;
+}
+
+.thesis_exhibit-main .description p {
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* THESIS EXHIBIT ASIDE */
+
+
+.thesis_exhibit-aside .data {
+    background-color: #273746;
+    color: #fff;
+}
+
+.thesis_exhibit-aside .line {
+    border: 1px solid #1A5276;
+    padding: 0;
+    margin: 1.5rem auto;
+    width: 50%;
+}
+
+.thesis_exhibit-aside .data .center .image-container {
+    border-bottom: 3px solid #fff;
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    background-color: red;
+}
+
+.thesis_exhibit-aside .data .center .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thesis_exhibit-aside .data .center .description {
+    padding: 1rem;
+}
+
+.thesis_exhibit-aside .data .center .description h2 {
+    margin: 0 0 1rem;
+}
+
+.thesis_exhibit-aside .data .center .description p {
+    margin: 0;
+}
+
+/* FOOTER */
+
+
+footer {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    padding: 1rem;
+    border-top: 2px solid #000;
+    font-size: .7rem;
+}
+
+footer .license {
+    flex-grow: 1;
+}
+
+footer .terms  span {
+    margin: 0 .5rem;
+}
