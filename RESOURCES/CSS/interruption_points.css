@@ -31,16 +31,6 @@
 /* MAIN */
 
 
-        @media only screen and (max-width: 967px) {
-
-            /* START LEARNING */ 
-
-            #start_learning-section .courses .course {
-                box-shadow: 10px 10px #000;
-            }
-        }
-
-
         @media only screen and (min-width: 886px) {
 
             /* INFORMATION ASIDE */
@@ -185,5 +175,9 @@
 @media only screen and (max-width: 600px) {
     footer .terms {
         display: none;
+    }
+
+    footer .license {
+        text-align: center;
     }
 }

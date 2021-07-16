@@ -291,12 +291,13 @@ h3 {
     max-width: 25rem;
     background-color: #fff;
     margin: 1rem;
+    box-shadow: 0px 5px 15px #616A6B;
     transition: box-shadow .5s;
     border: 2px solid #000;
 }
 
 #start_learning-section .courses .course:hover {
-    box-shadow: 10px 10px #000;
+    box-shadow: 0px 5px 30px #616A6B;
 }
 
 #start_learning-section .courses .course .center .image-container {
