@@ -31,6 +31,53 @@
 /* MAIN */
 
 
+
+        @media only screen and (max-width: 1169px) {
+
+        /* THESIS EXHIBIT */
+        
+        #thesis_exhibit-section .thesis_exhibit-section-container {
+            flex-direction: column;
+        }
+
+
+        /* THESIS EXHIBIT-MAIN */
+
+
+        .thesis_exhibit-main {
+            width: 100%;
+        }
+
+
+        .thesis_exhibit-main .video-container {
+            width: 100%;
+            height: auto;
+        }
+
+
+         /* THESIS EXHIBIT-ASIDE */
+
+
+         .thesis_exhibit-aside .line {
+            display: none;
+        }
+    
+    
+        .thesis_exhibit-aside {
+            display: flex;
+        }
+    
+        .thesis_exhibit-aside .data{
+            width: 50%;
+            flex-grow: 1;
+        }
+    
+        .thesis_exhibit-aside .one{
+            margin-right: 1rem;
+        }
+    }
+
+
         @media only screen and (min-width: 886px) {
 
             /* INFORMATION ASIDE */
@@ -87,53 +134,6 @@
         }
     }
 
-    
-
-    @media only screen and (max-width: 1169px) {
-
-        /* THESIS EXHIBIT */
-        
-        #thesis_exhibit-section .thesis_exhibit-section-container {
-            flex-direction: column;
-        }
-
-
-        /* THESIS EXHIBIT-MAIN */
-
-
-        .thesis_exhibit-main {
-            width: 100%;
-        }
-
-
-        .thesis_exhibit-main .video-container {
-            width: 100%;
-            height: auto;
-        }
-
-
-         /* THESIS EXHIBIT-ASIDE */
-
-
-         .thesis_exhibit-aside .line {
-            display: none;
-        }
-    
-    
-        .thesis_exhibit-aside {
-            display: flex;
-        }
-    
-        .thesis_exhibit-aside .data{
-            width: 50%;
-            flex-grow: 1;
-        }
-    
-        .thesis_exhibit-aside .one{
-            margin-right: 1rem;
-        }
-    }
-
 
     @media only screen and (max-width: 800px) {
 
@@ -166,6 +166,31 @@
 
         .thesis_exhibit-aside .one {
             margin-bottom: 1rem;
+        }
+    }
+
+
+    @media only screen and (max-width: 425px) {
+        #start_learning-section .desktop {
+            display: none;
+        }
+
+        #start_learning-section .mobile {
+            display: block;
+        }
+
+        #start_learning-section .mobile .course {
+            background-color: #fff;
+            padding: 1rem;
+            margin: .5rem 0;
+            border-radius: .5rem;
+            box-shadow: 0px 0px 10px #616A6B;
+            transition: all .5s;
+        }
+
+        #start_learning-section .mobile .course:hover {
+            box-shadow: 0px 0px 20px #616A6B;
+            background-color: #eceaea;
         }
     }
 
