@@ -18,12 +18,34 @@
 
 
 @media only screen and (max-width: 425px) {
-    .desktop {
+
+    header {
+        padding: .5rem;
+    }
+
+    header .logo-container {
         display: none;
     }
-    
-    .logo-container {
-        display: none;
+
+    header nav.mobile {
+        display: block;
+        width: 100%;
+    }
+
+    header nav.mobile ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav.mobile ul li {
+        height: 2.5rem;
+    }
+
+    header nav.mobile ul li img {
+        height: 100%;
     }
 }
 
@@ -171,6 +193,7 @@
 
 
     @media only screen and (max-width: 425px) {
+
         #start_learning-section .desktop {
             display: none;
         }
