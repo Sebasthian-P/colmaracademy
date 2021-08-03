@@ -211,6 +211,7 @@ nav.desktop ul li a:hover {
     display: flex;
     flex-direction: column;
     align-self: center;
+    width: 100%;
 }
 
 #information-aside .data .description {
