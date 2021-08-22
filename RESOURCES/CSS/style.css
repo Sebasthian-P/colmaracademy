@@ -127,6 +127,7 @@ nav.desktop ul li a:hover {
     background-color: #fff;
     border: 2px solid #000;
     padding: 1rem;
+    flex-shrink: 1.5;
 }
 
 .register-button {
