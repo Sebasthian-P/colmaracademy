@@ -208,6 +208,7 @@
             margin: .5rem 0;
             border-radius: .5rem;
             box-shadow: 0px 0px 10px #616A6B;
+            cursor: none;
             transition: all .5s;
         }
 

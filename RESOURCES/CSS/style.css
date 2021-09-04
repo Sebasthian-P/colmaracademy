@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background-color: #fef1e5;
+    background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
     padding: 0;
     margin: 0;
     max-width: 1799px;
@@ -45,16 +45,16 @@ header {
     display: flex;
     height: 4rem;
     min-width: 460px;
-    background-color: rgba(255, 255, 255);
+    max-width: 1799px;
     padding: .5rem 1.5rem;
+    background-color: #fafafa;
     box-sizing: border-box;
     align-items: center;
     font-family: "Noto Sans JP", sans-serif;
     position: fixed;
     width: 100%;
     z-index: 100;
-    max-width: 1799px;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #17202A;
 }
 
 .logo-container {
@@ -83,12 +83,29 @@ nav.desktop ul li {
 }
 
 nav.desktop ul li a {
-    color: #154360;
+    position: relative;
+    color: #17202A;
     transition: color .3s linear;
 }
 
 nav.desktop ul li a:hover {
-    color: #f00;
+    opacity: .7;
+}
+
+nav.desktop ul li a::after {
+    content: "";
+    width: 0px;
+    height: 4px;
+    background-color: #17202A;
+    position: absolute;
+    bottom: -10px;
+    right: 50%;
+    transition: all 300ms;
+}
+
+nav.desktop ul li a:hover::after {
+    width: 100%;
+    right: 0;
 }
 
 
@@ -125,7 +142,7 @@ nav.desktop ul li a:hover {
     align-items: center;
     margin: 1rem;
     background-color: #fff;
-    border: 2px solid #000;
+    border: 2px solid #17202A;
     padding: 1rem;
     flex-shrink: 1.5;
 }
@@ -159,8 +176,8 @@ nav.desktop ul li a:hover {
 
 #information-section {
     display: flex;
+    background-color: #fafafa;
     padding: 2rem 0 2rem 2rem;
-    background-color: #fff;
     border-top: 2px solid #000;
 }
 
@@ -176,8 +193,9 @@ nav.desktop ul li a:hover {
 }
 
 .information-main .description {
-    background-color: #fef1e5;
-    border: 2px solid #000;
+    background-color: #17202A;
+    border: 2px solid #17202A;
+    color: #fff;
     padding: 1rem;
     flex-grow: 5;
     margin-top: 1rem;
@@ -185,8 +203,8 @@ nav.desktop ul li a:hover {
 
 .information-main .author-container {
     background-color: #fff;
-    border: 2px solid #000;
-    color: #000;
+    border: 2px solid #17202A;
+    color: #17202A;
     padding: .5rem;
     flex-grow: 1;
     margin-top: 1rem;
@@ -225,7 +243,7 @@ nav.desktop ul li a:hover {
 }
 
 #information-aside .data .description a {
-    color: #288dcf;
+    color: #17202A;
     text-decoration: underline;
 }
 
@@ -239,14 +257,10 @@ nav.desktop ul li a:hover {
 
 #information-aside .data {
     display: flex;
-    background-color: #fff;
+    background-color: #e7e5e5;
+    color: #17202A;
     border: 2px solid #000;
     height: 10rem;
-    color: #000;
-}
-
-#information-aside .two {
-    background-color: #fef1e5;
 }
 
 #information-aside .image-container {
@@ -271,7 +285,7 @@ nav.desktop ul li a:hover {
 
 #start_learning-section {
     padding: 3rem;
-    color: #2C3E50;
+    color: #17202A;
     border-top: 2px solid #000;
 }
 
@@ -296,39 +310,41 @@ h3 {
     justify-content: center;
 }
 
-#start_learning-section .courses .course {
+#start_learning-section .course {
     width: 19rem;
     flex-grow: 1;
     max-width: 25rem;
     background-color: #fff;
     margin: 1rem;
-    box-shadow: 0px 5px 15px #616A6B;
-    transition: box-shadow .5s;
+    box-shadow: 1px 10px 61px -8px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: all 300ms;
 }
 
-#start_learning-section .courses .course:hover {
-    box-shadow: 0px 5px 40px #616A6B;
+#start_learning-section .course:hover {
+    transform: translateY(-10px);
+    box-shadow: none;
 }
 
-#start_learning-section .courses .course .center .image-container {
+#start_learning-section .courses .image-container {
     width: 100%;
     height: 200px;
     overflow: hidden;
 }
 
-#start_learning-section .courses .course .center .image-container img {
+#start_learning-section .courses .image-container img {
     width: 100%;
 }
 
-#start_learning-section .desktop .course .center .description {
+#start_learning-section .desktop .course .description {
     margin: 1rem;
 }
 
-#start_learning-section .desktop .course .center .description h2 {
+#start_learning-section .desktop .course .description h2 {
     margin: 0;
 }
 
-#start_learning-section .desktop .course .center .description p {
+#start_learning-section .desktop .course .description p {
     text-align: left;
     margin: 0;
 }
@@ -339,8 +355,8 @@ h3 {
 
 #thesis_exhibit-section {
     padding: 2rem;
-    background-color: #fff;
-    border-top: 2px solid #000;
+    border-top: 2px solid #2E4053;
+    background-color: #fafafa;
 }
 
 #thesis_exhibit-section h1 {
@@ -373,6 +389,7 @@ h3 {
     flex-direction: column;
     width: 60%;
     margin-right: 2rem;
+    color: #17202A;
 }
 
 .thesis_exhibit-main .video-container {
@@ -406,12 +423,13 @@ h3 {
 
 .thesis_exhibit-aside .data {
     background-color: #fff;
-    color: #000;
+    color: #17202A;
     border: 2px solid #000;
 }
 
 .thesis_exhibit-aside .one {
-    background-color: #fef1e5;
+    background-color: #17202A;
+    color: #fff;
 }
 
 .thesis_exhibit-aside .line {
@@ -451,7 +469,8 @@ h3 {
 
 
 footer {
-    background-color: #fef1e5;
+    background-color: #17202A;
+    color: #fff;
     display: flex;
     padding: 1rem;
     border-top: 2px solid #000;
